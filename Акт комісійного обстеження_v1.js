@@ -122,7 +122,7 @@ function EnterResultsTask() {
   }
 }
 
-function onTaskExecutedEnterResults(routeStage) {
+function onTaskExecuteEnterResults(routeStage) {
   debugger;
   if (routeStage.executionResult == "executed") {
     if (!EdocsApi.getAttributeValue("ActMeetingResult").value) throw `Внесіть значення в поле "Результат розгляду акту засіданням"`;
